@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EGE</title>
+    
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Libre+Baskerville&family=Merriweather&family=Montserrat:wght@400;900&family=Nunito+Sans:opsz@6..12&family=Sacramento&family=Ubuntu&family=Yeseva+One&display=swap" rel="stylesheet">
+
+    <style>
+        .hidden {
+            display: none;
+        }
+    </style>
+
+</head>
+<body>
+     <!-- Mobile Menu Sidebar -->
+
+     <div class="sidebar-container">
+        <div class="sidebar__top">
+            <div class="sidebar__header">
+                <div class="sidebar__header-inner">
+                    <button class="sidebar__header__item sidebar-close">
+                        <img src="./images/clear.svg" width="24px" height="24px" alt="mobButton">
+                    </button>
+                    <button class="sidebar__header__item">
+                        <img src="./images/logo.svg" width="61px" height="40px" alt="mobLogo">
+                    </button>
+                    <button class="sidebar__header__item">
+                        <img src="./images/nothing.png" width="28px" height="28px" alt="mobCart">
+                    </button>
+                </div>
+            </div>
+            <div class="sidebar__location">
+                <img src="./images/location_yellow.svg" alt="locationDropDown">
+                Москва
+            </div>
+            <ul class="sidebar__list1">
+                <li class="list1__item">
+                    <img src="./images/construction.svg" style="margin-right: 12px;" width="24px" height="24px" alt="construction">
+                    <a href="#">Стройматериалы</a>                        
+                </li>
+                <div class="sidebar__truncated-border"></div>
+                <li class="list1__item">
+                    <img src="./images/tools.svg" style="margin-right: 12px;" width="24px" height="24px" alt="tools">
+                    <a href="#">Инструменты</a>                        
+                </li>
+                <div class="sidebar__truncated-border"></div>
+                <li class="list1__item">
+                    <img src="./images/electric.svg" style="margin-right: 12px;" width="24px" height="24px" alt="electric">
+                    <a href="#">Электрика</a>                        
+                </li>
+                <div class="sidebar__truncated-border"></div>
+                <li class="list1__item">
+                    <img src="./images/interior.svg" style="margin-right: 12px;" width="24px" height="24px" alt="interior">
+                    <a href="#">Интерьер и отделка</a>                        
+                </li>
+                <div class="sidebar__truncated-border"></div>
+            </ul>
+        </div>
+        <div class="sidebar_bottom">
+            <ul class="sidebar__list2">
+                <li class="list2__item"  style="color: #D8C497;">
+                    <a href="#">Главная</a>
+                </li>
+                <li class="list2__item">
+                    <a href="#">О компании</a>
+                </li>
+                <li class="list2__item">
+                    <a href="#">Каталог</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+            <!-- Header Top Container -->
+
+    <header class="header">
+        <div class="container">
+
+            <!-- Header Top Menu LEFT -->
+
+            <div class="header__inner1">
+                <a href="#" class="logo">
+                    <img class="main-logo-desktop" src="./images/logo.svg" width="61px" height="40px" alt="mainLogo">
+                </a>
+                <nav class="menu">
+                    <div class="mob-header-container">
+                        <button class="mob-header-item mob-header-button">
+                            <img src="./images/menu_btn.svg" width="24px" height="24px" alt="mobButton">
+                        </button>
+                        <button class="mob-header-item">
+                            <img src="./images/logo.svg" width="61px" height="40px" alt="mobLogo">
+                        </button>
+                        <button class="mob-header-item">
+                            <img src="./images/cart.svg" width="24px" height="24px" alt="mobCart">
+                        </button>
+                    </div>
+                    <ul class="menu__list">
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Главная</a>                            
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">О компании</a>                            
+                        </li>
+                        <li class="menu__item">
+                            <a href="#" class="menu__link">Каталог</a>                            
+                        </li>
+                    </ul>
+                </nav>                
+            </div>
+
+            <!-- Header Top Menu RIGHT -->
+
+            <div class="header__inner2">
+                <ul class="user-actions">
+                    <li class="user-actions__item">
+                        <a href="#" class="user-action__link">
+                            <img src="./images/phone.svg" height="28px" width="194px" alt="call us">
+                        </a>
+                    </li>
+                    <li class="user-actions__item">
+                        <a href="#" class="user-action__link heart">
+                            <img src="./images/heart.svg" height="24px" width="24px" alt="favourite">
+                        </a>
+                    </li>
+                    <li class="user-actions__item">     
+                        <form action="index.html">
+                            <button class="cart-button">
+                                <img src="./images/cart.svg" height="28px" width="28px" alt="cartIcon">
+                                Пусто
+                            </button>
+                        </form>               
+                                
+                    </li>
+                </ul>
+            </div>
+        </div>      
+        
+                <!-- Header Bottom Container -->
+
+        <div class="bottom-container-background">
+            <div class="container">
+
+                <!-- Header Bottom Menu LEFT -->
+
+                <div class="header__inner3">
+                    <a href="#" class="menu-icon">
+                        <img src="./images/menu.svg" height="24px" width="16px" alt="menuIcon">
+                    </a>
+                    <ul class="catalog">
+                        <li class="catalog__word">
+                            <a href="#" class="bottom_menu__link">Каталог</a>
+                        </li>
+                    </ul> 
+                    <nav class="bottom-menu">
+                        <ul class="bottom-menu__list">
+                            <li class="bottom-menu__item">
+                                <a href="#" class="bottom_menu__link">Стройматериалы</a>                                
+                            </li>
+                            <li class="bottom-menu__item">
+                                <a href="#" class="bottom_menu__link">Инструменты</a>                                
+                            </li>
+                            <li class="bottom-menu__item">
+                                <a href="#" class="bottom_menu__link">Электрика</a>                                
+                            </li>
+                            <li class="bottom-menu__item">
+                                <a href="#" class="bottom_menu__link">Интерьер и одежда</a>                                
+                            </li>
+                        </ul>
+                    </nav>                                      
+                </div>
+
+                <!-- Header Bottom Menu RIGHT -->
+
+                <div class="header__inner4">                    
+                    <form action="index.html" class="search-bar-container">                        
+                        <input class="search-bar__input" type="search" id="searchInput" placeholder="Поиск, например, Круг зачистной" autocomplete="off">                        
+                        <button class="search-bar__button" type="submit"><img src="./images/search.svg" height="24px" width="24px" alt="search"></button>                            
+                    </form>
+                    <ul class="location">             
+                        <img src="./images/location.svg" height="12px" width="12px" alt="location">
+                        Москва                        
+                    </ul>
+                </div>
+            </div>            
+        </div>
+    </header>   
+
+         <!-- Main Content -->
+
+    <main class="main">
+        
+        <!-- 1. Man with a helmet and title -->
+
+        <section class="top">
+            <div class="container">
+                <div class="top__inner">
+                    <h1 class="top__title">
+                        Инструмент для вашего бизнеса
+                    </h1>
+                </div>
+            </div>
+        </section>
+
+        <!-- 2. Features -->
+
+        <div class="container">
+            <div class="features__inner">
+                <ul class="features__list">
+                    <li class="features__item">
+                        <img src="./images/brick_wall.svg" height="72px" width="72px" style="margin-right: 16px;" alt="brickWall">
+                        <span class="features__text">
+                            <span class="dark-grey" style="color: #3C3C3B;">Большой ассортимент</span>
+                            <span class="light-grey" style="color: #A1A0A0;">строительных материалов всегда в наличии</span>
+                        </span>                        
+                    </li>
+                    <li class="features__item">
+                        <img src="./images/truck.svg" height="72px" width="72px" style="margin-right: 16px;" alt="truck">
+                        <span class="features__text">
+                            <span class="dark-grey" style="color: #3C3C3B;">Доставка стройматериалов</span>
+                            <span class="light-grey" style="color: #A1A0A0;">в течении четырех часов или в любое удобное время</span>
+                        </span>                   
+                    </li>
+                    <li class="features__item">
+                        <img src="./images/like.svg" height="72px" width="72px" style="margin-right: 16px;" alt="like">
+                        <span class="features__text">
+                            <span class="light-grey" style="color: #A1A0A0;">Многоуровневая</span>
+                            <span class="dark-grey" style="color: #3C3C3B;">система управления качеством</span>
+                            <span class="light-grey" style="color: #A1A0A0;">по стандарту ISO 9001</span>
+                        </span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        
+        <!-- 3. Pagination -->
+        <div class="container pagination-container">
+            <div class="pagination__inner">
+                <a href="#" class="page-link active" onclick="showPage(1)">1</a>
+                <a href="#" class="page-link" onclick="showPage(2)">2</a>
+                <a href="#" class="page-link" onclick="showPage(3)">3</a>
+                <a href="#" class="page-link" onclick="showPage(4)">4</a>
+                <a href="#" class="page-link" onclick="showPage(5)">5</a>
+            </div>            
+        </div>
+
+        <!-- 4. Goods -->
+
+        <div class="container goods-container">           
+            <div class="goods__inner page" id="page1">
+                <div class="goods__one" style="background-color: white;">
+                    <div class="goods1__title goods__title">Строительный отделочный инструмент</div>
+                    <img class="goods1__img" src="./images/goods1.png" alt="goodsOne">
+                    <div class="goods1__cta goods__cta">
+                        Перейти в каталог
+                        <button class="goods1__btn goods__button">
+                            <img src="./images/arrow.svg" width="20px" alt="goodsArrow">
+                        </button>                        
+                    </div>
+                </div>
+                <div class="goods__two" style="background-color: white;">
+                    <img class="goods2__img" src="./images/goods2.png" alt="goodsTwo">
+                    <div class="goods2__title goods__title">Эмали</div>                    
+                    <div class="goods2__cta goods__cta">
+                        Перейти в каталог
+                        <button class="goods2__btn goods__button">
+                            <img src="./images/arrow.svg" width="20px" alt="goodsArrow">
+                        </button>                        
+                    </div>
+                </div>
+                <div class="goods__three" style="background-color: white;">
+                    <img class="goods3__img" src="./images/goods3.png" alt="goodsThree">
+                    <div class="goods3__title goods__title">Лакокрасочные материалы</div>                    
+                    <div class="goods3__cta goods__cta">
+                        Перейти в каталог
+                        <button class="goods3__btn goods__button">
+                            <img src="./images/arrow.svg" width="20px" alt="goodsArrow">
+                        </button>                        
+                    </div>
+                </div>
+                <div class="goods__four" style="background-color: white;">                    
+                    <img class="goods4__img" src="./images/goods4.png" alt="goodsFour">
+                    <div class="goods4__title goods__title">Пены, клеи и герметики</div>
+                    <div class="goods4__cta goods__cta">
+                        Перейти в каталог
+                        <button class="goods4__btn goods__button">
+                            <img src="./images/arrow.svg" width="20px" alt="goodsArrow">
+                        </button>                        
+                    </div>
+                </div>
+                <div class="goods__five" style="background-color: white;">
+                    <div class="goods5__title goods__title">Розетки и выключатели</div>
+                    <img class="goods5__img" src="./images/goods5.png" alt="goodsFive">
+                    <div class="goods5__cta goods__cta">
+                        Перейти в каталог
+                        <button class="goods5__btn goods__button">
+                            <img src="./images/arrow.svg" width="20px" alt="goodsArrow">
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4.1 Goods. Page 2 -->
+
+            <div class="goods__inner page hidden" id="page2" style="gap: 0; margin-bottom: 50px;" >
+                <div class="brother">
+                </div>     
+                <div style="grid-row: span 2;" class="brother">
+                    <img src="./images/zdarova.jpg" alt="">
+                </div>             
+            </div>
+        </div>
+    </main>  
+    
+    <!-- Footer Top -->
+    
+    <footer class="footer">        
+        <div class="footer__top">
+            <div class="container footer-container">
+                <div class="footer__top-left">
+                    <a href="#"><img src="./images/footer_logo.svg" alt="footerLogo"></a>
+                    <div class="footer__contacts-and-mail">
+                        <div class="footer__phone-icon">
+                            <img src="./images/footer_phone.svg" alt="phoneIcon">
+                        </div>
+                        <ul class="footer__phone-details footer__details-column">
+                            <li class="footer__contact-phone-phrase footer__small-grey">Контактный телефон</li>
+                            <li>+7 (812) 309-09-34</li>
+                            <li>+7 (965) 084-29-09</li>
+                        </ul>
+                        <div class="footer__mail-icon">
+                            <img src="./images/footer_mail-left.svg" alt="mail-icon">
+                        </div>
+                        <ul class="footer__mail-details footer__details-column">
+                            <li class="footer__email-phrase footer__small-grey">Электронная почта</li>
+                            <li>tustin78@mail.ru</li>
+                            <li>info@tustin.ru</li>
+                        </ul>
+                    </div>
+                </div>         
+                <div class="footer__top-mid-left footer__middle"></div>   
+                <div class="footer__top-mid-center footer__middle"></div>   
+                <div class="footer__top-mid-right footer__middle"></div>       
+                <div class="footer__top-right">
+                    <ul class="footer__questions-and-mail">
+                        <li class="footer__q-and-m-item">Остались вопросы?</li>
+                        <li class="footer__q-and-m-item footer__big-grey">Узнавайте первым о скидках, предложениях и событиях еженедельно в своем почтовом ящике. Отпишитесь в любое время одним щелчком мыши.</li>
+                        <li class="footer__q-and-m-item footer__enter-your-email">
+                            <img src="./images/mail.svg" alt="mail-icon_small">
+                            <form action="mailto:someone@gmail.com" class="footer__input-container">
+                                <input class="footer__input-field" autocomplete="off" type="email" id="email" placeholder="Введите свою почту">   
+                                <button class="footer__input-button-container">
+                                    <input class="footer__submit-button" type="submit">  
+                                </button>                                                                  
+                            </form>                            
+                        </li>                        
+                    </ul>
+                </div>
+            </div>            
+        </div>
+
+        <!-- Footer Bottom -->
+
+        <div class="footer__bottom">
+            <div class="container footer-container">
+                <div class="footer__bottom-container">
+                    <div class="footer__bottom-top">
+                        <ul class="footer__menu-list">
+                            <li class="footer__menu-item">
+                                <a href="#">Главная</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">О компании</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#">Каталог</a>
+                            </li>
+                        </ul>                    
+                    </div> 
+                    <div class="footer__bottom-bottom">
+                        <div class="footer__social-media">
+                            <a href="https://www.facebook.com/"><img class="footer__social-media-icon" src="./images/facebook.svg" alt="facebook"></a>
+                            <a href="https://www.youtube.com/"><img class="footer__social-media-icon" src="./images/youtube.svg" alt="youTube"></a>
+                            <a href="https://www.whatsapp.com/"><img class="footer__social-media-icon" src="./images/whatsapp.svg" alt="whatsApp"></a>
+                        </div>
+                        <div class="footer__copyright">
+                            © 2021-2022, EDE
+                        </div>                  
+                    </div>
+                </div>                  
+            </div>
+        </div>           
+    </footer>
+<script src="index.js"></script>
+</body>
+</html>
